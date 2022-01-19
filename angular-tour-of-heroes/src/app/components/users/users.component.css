@@ -1,0 +1,17 @@
+span {
+    color: rgb(6, 189, 245);
+    font-size: 16px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(247, 21, 14);
+    text-transform: uppercase;
+    font-size: 16;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}

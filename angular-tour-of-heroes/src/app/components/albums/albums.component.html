@@ -1,0 +1,10 @@
+<div class="row">
+    <h1 class="text-center">Albums</h1>
+    <div class="col-sm-6 " *ngFor="let album of albums">
+        <ul class="list-group list-group-flush my-3 border border-warning">
+            <li class="list-group-item badge">{{album.id}}</li>
+            <li class="list-group-item">{{album.userId}}</li>
+            <li class="list-group-item">{{album.title}}</li>
+        </ul>
+    </div>
+</div>

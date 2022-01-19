@@ -1,0 +1,33 @@
+<h1 class="text-center">
+
+    {{title}}</h1>
+<div class="row">
+    <div class="col-sm-6 col-md-4 g-2" *ngFor="let user of usersResult">
+        <ul class="list-group border border-primary">
+            <li class="list-group-item active text-center" aria-current="true">{{user.id}}</li>
+            <li class="list-group-item active text-center" aria-current="true">{{user.name}}</li>
+            <li class="list-group-item"><span>Email:</span>{{user.email}}</li>
+            <li class="list-group-item"><span>User Name:</span>{{user.username}}</li>
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary" aria-current="true">Votre Adress est:</li>
+                    <li class="list-group-item"><span>Street:</span>{{user.address.street}}</li>
+                    <li class="list-group-item"><span>Suit:</span>{{user.address.suite}}</li>
+                    <li class="list-group-item"><span>City:</span>{{user.address.city}}</li>
+                    <li class="list-group-item"><span>Zip Code:</span>{{user.address.zipcode}}</li>
+                </ul>
+
+            </li>
+
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-secondary" aria-current="true">Vote Geolocalisation est :</li>
+                    <li class="list-group-item"><span>Latitude:</span>{{user.address.geo.lat}}</li>
+                    <li class="list-group-item"><span>Langitude:</span>{{user.address.geo.lng}}</li>
+
+                </ul>
+            </li>
+            <li class="list-group-item"><span>Phone:</span>{{user.phone}}</li>
+        </ul>
+    </div>
+</div>
