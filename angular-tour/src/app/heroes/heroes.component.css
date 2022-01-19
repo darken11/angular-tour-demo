@@ -1,0 +1,135 @@
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    position: relative;
+}
+
+.heroes {
+    background-color: white;
+    position: relative;
+    left: -300px;
+}
+
+.heroes li {
+    background-color: rgb(235, 231, 231);
+    border-radius: 6px;
+    width: 400px;
+    margin-bottom: 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+}
+
+.heroes li .delete-button {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    border: 3px solid white;
+    color: white;
+    background-color: #ff5151;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.heroes li .delete-button span {
+    font-weight: bold;
+}
+
+.heroes li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.heroes li:hover {
+    background-color: #505050;
+}
+
+.heroes li:hover a {
+    color: white;
+}
+
+input {
+    padding: .5em;
+}
+
+.heroes .badge {
+    background-color: #369;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-right: 10px;
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.heroes li.selected {
+    background-color: #000;
+    color: #ffff;
+}
+
+.add {
+    margin-top: 20px;
+    position: relative;
+    left: -300px;
+}
+
+.add label {
+    width: 200px;
+    color: #345960;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.add input {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    font-size: 16px;
+}
+
+.add button {
+    width: 130px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(12, 198, 245);
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.add button:hover {
+    background-color: rgb(36, 121, 43);
+}
